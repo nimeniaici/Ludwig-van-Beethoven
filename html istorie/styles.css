@@ -1,0 +1,414 @@
+header {
+    position: relative; /* Adaugăm poziționare relativă pentru a poziționa elementele interne */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("fundal.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Opacitatea imaginii de fundal */
+}
+
+.header-content {
+    position: relative;
+    z-index: 1; 
+    padding: 20px; 
+    color: #fff; 
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px; 
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tabs ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.tabs ul li {
+    margin-right: 10px;
+}
+
+.tabs ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #666;
+}
+
+.tabs ul li:last-child {
+    margin-right: 0; 
+}
+.tabs ul li a:hover {
+    background-color: #555;
+}
+
+
+/* Stilizare secțiuni */
+.animated-section {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.animated-section h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Stilizare imagine de introducere */
+.introduction {
+    margin: 0 20px; 
+    padding: 30px; 
+}
+.intro-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%; 
+    height: auto;
+    border-radius: 15px;
+    max-height: 700px; 
+    width: auto;
+}
+
+/* Stilizare pentru secțiunea de biografie */
+#biography {
+    margin: 0 20px; 
+    padding: 30px; 
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+#biography h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#biography p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Stilizare pentru secțiunea de compoziții celebre */
+
+#famous-compositions {
+    margin: 0 20px;
+    padding: 20px; 
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+#famous-compositions h2 {
+    color: #333;
+    margin-bottom: 20px;
+   
+}
+
+.composition {
+    margin-bottom: 40px;
+}
+
+.composition-image {
+    position: relative;
+}
+
+.prevBtn,
+.nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.prevBtn {
+    left: 10px;
+}
+
+.nextBtn {
+    right: 10px;
+}
+
+.composition h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.composition p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.composition-link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #fff;
+    background: linear-gradient(to bottom, hsl(211, 45%, 55%) 0%, hwb(210 2% 65%) 100%);
+    border-radius: 6px;
+    box-shadow: 0 4px 6px #0c01724d;
+    transition: transform 0.3s ease;
+}
+
+.composition-link:hover {
+    transform: translateY(-2px);
+}
+
+
+.composition-image img {
+    width: 200px; 
+    height: auto;
+    border-radius: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    size: 40px;
+}
+
+/* Stilizare titluri de melodii */
+.song-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+
+/* Stilizare pentru secțiunea de moștenire și influență */
+
+#legacy-and-influence {
+    margin: 0 20px; 
+    padding: 20px; 
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+#legacy-and-influence h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#legacy-and-influence p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+/* Stilizare imaginilor din slideshow */
+.slide img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+/* Stilizare pentru containerul slideshow */
+.slideshow {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+
+.slide {
+    display: none;
+}
+
+
+/* Stilizare pentru secțiunea cu citate */
+.quote-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+/* Stilizare pentru fiecare citat */
+.quote {
+    display: block;
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border-radius: 15px; 
+    background: linear-gradient(to top, #ffffff, #2989d8, #1e5799); /* Gradient de jos în sus */
+    color: #fff;
+    font-size: 14px; /* Text mai mic */
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    position: relative; 
+}
+
+/* Stilizare pentru hover peste citat */
+.quote:hover {
+    transform: translateY(-1px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/* Stilizare pentru citatele cu strălucire */
+.quote::before {
+    content: '';
+    position: absolute;
+    top: -5px; 
+    left: -5px; 
+    right: -5px; 
+    bottom: -5px; 
+    border-radius: 15px; /* Colțuri mai rotunjite */
+    background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%); /* Strălucire */
+    z-index: -1;
+}
+
+
+.reference-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.reference-list li {
+    margin-bottom: 10px;
+}
+
+.reference-list li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.reference-list li a:hover {
+    color: #0056b3;
+}
+
+
+
+/* Stilizare pentru dispozitive mobile */
+@media only screen and (max-width: 600px) {
+    .tabs ul {
+        text-align: center;
+    }
+    .tabs ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .animated-section {
+        padding: 10px;
+    }
+    .title {
+        font-size: 1.5em;
+    }
+    header {
+        padding: 10px;
+    }
+}
+
+
+
+
+/* Stilizare pentru secțiunea de introducere */
+.introduction {
+    background-color: #c6c6c6; }
+
+/* Stilizare pentru secțiunea de citate celebre */
+.quote-section {
+    background-color: rgb(143, 187, 218); 
+}
+
+/* Stilizare pentru secțiunea de biografie */
+#biography {
+    background-color: #f0f7a3; }
+
+/* Stilizare pentru secțiunea de compoziții celebre */
+#famous-compositions {
+    background-color: rgb(204, 211, 255); 
+}
+
+/* Stilizare pentru secțiunea de moștenire și influență */
+#legacy-and-influence {
+    background-color: hwb(0 83% 0%); 
+}
+
+/* Stilizare pentru secțiunea de galerie de imagini */
+#image-gallery {
+    background-color: hwb(0 58% 41%); 
+}
+
+
+#references {
+    background-color: hwb(261 72% 0%); 
+}
+.title {
+    font-family: 'Nunito', 'Trebuchet MS';
+    font-size: 2em;
+    color: #000;
+    margin-bottom: 10px; 
+    font-style: italic; 
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-background {
+    position: relative;
+    background-image: url("fundal.jpg"); 
+    background-position: center;
+    opacity: 0.8; 
+    color: #fff; 
+    text-align: center; 
+}
+
+.header-content {
+    padding: 20px; 
+}
+
+
+.footer {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
